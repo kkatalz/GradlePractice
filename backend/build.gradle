@@ -18,3 +18,18 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+task generateDocs {
+    doLast {
+        println 'Zoos house a diverse array of animals, providing a sanctuary for species from various' +
+                ' ecosystems. Visitors can explore enclosures featuring mammals like lions, elephants,' +
+                ' and monkeys, along with a variety of birds, reptiles, and aquatic creatures. Zoos play' +
+                ' a crucial role in wildlife conservation, offering a safe haven for endangered species' +
+                ' and supporting breeding programs to prevent extinction. They also serve as educational' +
+                ' centers, raising awareness about animal behavior, habitat conservation, and biodiversity.' +
+                ' Modern zoos prioritize animal welfare, ensuring enclosures mimic natural habitats and' +
+                ' provide enrichment to promote physical and mental health. By visiting a zoo, people can' +
+                ' connect with nature and contribute to the conservation efforts that protect these' +
+                ' magnificent animals.'
+    }
+}

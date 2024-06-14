@@ -20,3 +20,10 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+task buildLibrary {
+    dependsOn build
+    doLast {
+        println 'The library was built successfully!'
+    }
+}
